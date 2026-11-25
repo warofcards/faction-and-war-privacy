@@ -15,18 +15,19 @@ a{color:#1a5fb4}
 </head>
 <body>
 <h1>Privacy Policy - Faction and War</h1>
-<p><em>Last updated: November 24, 2026</em></p>
+<p><em>Last updated: November 25, 2026</em></p>
 <p>Faction and War ("the game") is a card-battle game published by SinglePlayerBuild ("we", "us"). This policy explains what information the game collects, how we use it, and your choices.</p>
 
 <h2 id="information-we-collect">Information we collect</h2>
 <ul>
 <li><strong>Account information:</strong> the email address and password you use to register or log in. Authentication is handled by Google Firebase Authentication; we never see your password in plain text.</li>
-<li><strong>Game profile and progress:</strong> your player name, avatar, chosen faction, hero level, deck, owned cards and card levels, in-game currencies (Gold, Gems, Mana), fragments, ranking points and tier, daily-reward status, and similar gameplay data. This is stored in Google Cloud Firestore so your progress is saved to your account.</li>
+<li><strong>Game profile and progress:</strong> your player name, avatar, chosen faction, hero level, deck, owned cards and card levels, in-game currencies (Gold, Gems, Mana), fragments, ranking points and tier, number of matches and wins, account creation date, daily-reward status, and similar gameplay data. This is stored in Google Cloud Firestore so your progress is saved to your account.</li>
 <li><strong>Chat and Guild information:</strong> the chat messages you send (up to 50 characters each). Messages sent to Global chat can be seen by all players; messages sent to Guild chat can be seen only by the members of your Guild. Each message is stored together with your player name, Guild tag, avatar and account ID in Google Cloud Firestore and is automatically deleted after 24 hours. We also collect your Guild name, role and activity (for example donations and your Guild Tournament Deck choices) and the replay data of Guild Tournament battles.</li>
 <li><strong>Reports:</strong> when you report a player from the chat, we store your account ID, the reported player's account ID and name, whether the message was in Global or Guild chat, the reason you chose, a copy of the reported message (up to 50 characters) and the time of the report. Other players cannot see reports.</li>
+<li><strong>Fair-play and security records:</strong> game rewards and match results are calculated and checked by our server. To do this, the server records when each ranked match starts and ends and its result, counts how often your account uses each game feature in a short period (to stop automated abuse), keeps the ID of your most recent request (so a request sent twice is not counted twice), records the time of your last chat message (to limit chat spam), and receives the version number of the game app with each request (to ask you to update when an old version can no longer be used).</li>
 <li><strong>Purchase information:</strong> when you buy Gems, Google Play processes the payment. We receive only a purchase receipt (a purchase token and product ID) so our server can verify the purchase with Google and grant your Gems. We do not receive or store your payment card details.</li>
 <li><strong>Account and technical identifiers:</strong> your account is identified by a unique user ID created by Firebase Authentication. Firebase services receive your IP address and basic device and app information (such as the operating system version and device model) to keep the service secure and working, and Firebase and Google Play services create limited diagnostic data (for example, error logs and timestamps) needed to run the service. The game does not read your Android advertising ID, hardware device ID or other device identifiers, and it does not use analytics or advertising services.</li>
-<li><strong>Local settings:</strong> your sound/effects preferences, your list of blocked players and, if you choose "Remember me", your email address are stored on your device only. Your password is never stored by the game.</li>
+<li><strong>Local settings:</strong> your sound/effects preferences, your list of blocked players, a match result that has not reached our server yet (so it can be sent later) and, if you choose "Remember me", your email address are stored on your device only. Your password is never stored by the game.</li>
 </ul>
 <p>We do <strong>not</strong> collect your precise location, contacts, photos, or microphone data, and the game does not show third-party advertising.</p>
 
@@ -36,6 +37,7 @@ a{color:#1a5fb4}
 <li>to run features such as rankings and monthly ranking rewards (your player name, tier, and ranking points are visible to other players in the ranking list);</li>
 <li>to run Guilds, Guild chat, Global chat and Guild Tournaments (your player name and chat messages are visible to other players, and your Guild's Tournament Decks and battle replays can be seen by other players);</li>
 <li>to process and verify in-app purchases and prevent fraud;</li>
+<li>to keep the game fair: we may review accounts with values that are not possible in normal play (for example currency balances or match counts) and correct those values or restrict accounts that cheat;</li>
 <li>to keep chat and names appropriate and to review player reports (see Content moderation below);</li>
 <li>to fix bugs and improve the game.</li>
 </ul>
@@ -48,7 +50,7 @@ a{color:#1a5fb4}
 
 <h2 id="data-retention-and-deletion">Data retention and deletion</h2>
 <p>Your account data is kept while your account is active.</p>
-<p><strong>Delete your account in the game:</strong> open Settings (gear icon on the Home screen) and choose <strong>Delete account</strong>. You are logged out and the account is scheduled for deletion. If you log in again within 7 days, the request is cancelled. After 7 days (processed by a daily job, so it can take up to 8 days in total) we permanently delete your login (email address and password), your player profile and name, your game progress and currencies, your Guild membership, your ranking rewards, and your in-game messages and rewards. Your name is also removed from past monthly ranking lists.</p>
+<p><strong>Delete your account in the game:</strong> open Settings (gear icon on the Home screen) and choose <strong>Delete account</strong>. You are logged out and the account is scheduled for deletion. If you log in again within 7 days, the request is cancelled. After 7 days (processed by a daily job, so it can take up to 8 days in total) we permanently delete your login (email address and password), your player profile and name, your game progress and currencies, your Guild membership, your ranking rewards, your in-game messages and rewards, and your fair-play and security records (match records, request counters, Guild mission progress and Guild leave records). Your name is also removed from past monthly ranking lists.</p>
 <p>Chat messages are automatically deleted from our database after 24 hours. Your list of blocked players is stored only on your device and is not part of the data we keep.</p>
 <p><strong>Without the game:</strong> email us at <a href="mailto:warofcards.86@gmail.com">warofcards.86@gmail.com</a> from the email address of your account and ask for deletion. We will delete the account and its game data within 30 days.</p>
 <p><strong>What we keep:</strong> purchase records (product, order ID, purchase token and dates) are kept without your account details, for legal and fraud-prevention reasons.</p>
